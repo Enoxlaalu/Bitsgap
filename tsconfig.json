@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es7",
+      "es6",
+      "es5"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "baseUrl": ".",
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitReturns": false, // для отключения ошибки not all code paths return a value
+    "noImplicitThis": false,
+    "outDir": "./TSDist/",
+    "pretty": true,
+    "sourceMap": false,
+    "strictNullChecks": false, // для отключения ошибки object is possibly undefined
+    "target": "es5",
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src",
+    "types/global.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "./src/kit/amplitude.ts"
+  ]
+}
